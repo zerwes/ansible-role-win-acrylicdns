@@ -1,0 +1,19 @@
+---
+- name: Install {{ acrylic_choco_package }}
+  win_chocolatey:
+    name: "{{ acrylic_choco_package }}"
+    state: present
+
+- name: Configure Acrylic DNS Proxy
+  win_template:
+    src: AcrylicConfiguration.ini.j2
+    dest: C:\Program Files (x86)\Acrylic DNS Proxy\AcrylicConfiguration.ini
+    backup: true
+  notify: acrylic_dns_proxy_service
+
+- name: Config Acrylic DNS Proxy on all visible adapters
+  ansible.windows.win_dns_client:
+    adapter_names: '*'
+    dns_servers:
+      - 127.0.0.1
+    log_path: "{{ acrylic_dnsclient_logpath | default(omit) }}"
