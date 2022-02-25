@@ -1,0 +1,48 @@
+---
+acrylic_choco_package: acrylic-dns-proxy
+
+# define this in order to let the dns client log to a file
+#acrylic_dnsclient_logpath: C:\dnslog.txt
+
+# service name
+acrylic_dns_proxy_service_name: AcrylicDNSProxySvc
+
+# acrylic-dns-proxy cfg
+acrylic_dns_erver_list:
+  - PrimaryServer
+  - SecondaryServer
+  - TertiaryServer
+  - QuaternaryServer
+  - QuinaryServer
+  - SenaryServer
+  - SeptenaryServer
+  - OctonaryServer
+  - NonaryServer
+  - DenaryServer
+
+# define defaults for all servers
+acrylic_dns_defaults:
+  Address:
+  Port: 53
+  Protocol: UDP
+  DoHProtocolPath:
+  DoHProtocolHost:
+  DoHProtocolConnectionType: System
+  DoHProtocolReuseConnections: "Yes"
+  DoHProtocolUseWinHttp: "Yes"
+  Socks5ProtocolProxyAddress:
+  Socks5ProtocolProxyPort:
+  DomainNameAffinityMask:
+  QueryTypeAffinityMask:
+  IgnoreFailureResponsesFrom: "No"
+  IgnoreNegativeResponsesFrom: "No"
+
+# these are infact the scrylic DNS defaults
+acrylic_dns_proxy_servers:
+  PrimaryServer:
+    Address: 8.8.8.8
+  SecondaryServer:
+    Address: 8.8.4.4
+
+acrylic_dns_proxy_settings: {}
+  # HitLogFileName: C:\AcrylicDNSProxy.log
