@@ -2,7 +2,7 @@
 acrylic_choco_package: acrylic-dns-proxy
 
 # define this in order to let the dns client log to a file
-#acrylic_dnsclient_logpath: C:\dnslog.txt
+# acrylic_dnsclient_logpath: C:\dnslog.txt
 
 # service name
 acrylic_dns_proxy_service_name: AcrylicDNSProxySvc
