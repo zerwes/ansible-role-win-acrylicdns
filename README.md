@@ -2,7 +2,13 @@
 [![ansible-lint](https://github.com/zerwes/ansible-role-win-acrylicdns/actions/workflows/lint.yml/badge.svg)](https://github.com/zerwes/ansible-role-win-acrylicdns/actions?query=workflow%3Aansible-lint)
 
 # ansible-role-win-acrylicdns
-ansible role to install and configure [acrylic dns](https://mayakron.altervista.org/support/acrylic/Home.htm)
+ansible role to install and configure [acrylic dns](https://mayakron.altervista.org/support/acrylic/Home.htm) on windows.
+
+[acrylic dns](https://mayakron.altervista.org/support/acrylic/Home.htm) can be used for a *split view* DNS setup with:
+
+ + partially resolving some internal zomes via VPN
+ * preventing DNS leakage of internal DNS names to the upstream public DNS
+ * avoid slowdown of general DNS resolution of public resolvable DNS names (for example by routing **all** DNS queries via a VPN) by selectivly routing only the DNS traffic required via VPN etc.
 
 ## Role Variables
 
