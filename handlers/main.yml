@@ -1,0 +1,5 @@
+---
+- name: acrylic_dns_proxy_service
+  ansible.windows.win_service:
+    name: "{{ acrylic_dns_proxy_service_name }}"
+    state: restarted
