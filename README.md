@@ -1,4 +1,4 @@
-![stand with Ukraine](https://badgen.net/badge/support/UKRAINE/?color=0057B8&labelColor=FFD700)
+![stand with Ukraine](https://badgen.net/badge/stand%20with/UKRAINE/?color=0057B8&labelColor=FFD700)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 [![ansible-lint](https://github.com/zerwes/ansible-role-win-acrylicdns/actions/workflows/lint.yml/badge.svg)](https://github.com/zerwes/ansible-role-win-acrylicdns/actions?query=workflow%3Aansible-lint)
 
