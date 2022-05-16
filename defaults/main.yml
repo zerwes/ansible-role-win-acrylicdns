@@ -37,7 +37,7 @@ acrylic_dns_defaults:
   IgnoreFailureResponsesFrom: "No"
   IgnoreNegativeResponsesFrom: "No"
 
-# these are infact the scrylic DNS defaults
+# these are infact the acrylic DNS defaults
 acrylic_dns_proxy_servers:
   PrimaryServer:
     Address: 8.8.8.8
