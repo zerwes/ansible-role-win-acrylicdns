@@ -1,11 +1,11 @@
 ---
 - name: Install {{ acrylic_choco_package }}
-  win_chocolatey:
+  chocolatey.chocolatey.win_chocolatey:
     name: "{{ acrylic_choco_package }}"
     state: present
 
 - name: Configure Acrylic DNS Proxy
-  win_template:
+  ansible.windows.win_template:
     src: AcrylicConfiguration.ini.j2
     dest: C:\Program Files (x86)\Acrylic DNS Proxy\AcrylicConfiguration.ini
     backup: true
